@@ -162,9 +162,9 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+#     heading: 'WHS{SEGFAULT}'
+#     subheading: 'System Vulnerability Analysis Team'
+#     banner: 'default'
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
