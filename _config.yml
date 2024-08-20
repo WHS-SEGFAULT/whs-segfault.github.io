@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: WHS{SEGFUALT}
+title: WHS{SEGFAULT}
 email: your-email@domain.com
 author: 011nuyha, bnovkebin, koeunchong, mntly, Adawn0106, NoNoNGU
 
