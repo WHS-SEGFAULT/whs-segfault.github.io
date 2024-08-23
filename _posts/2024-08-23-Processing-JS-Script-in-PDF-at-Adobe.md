@@ -3,7 +3,7 @@ layout: post
 title: Processing JS Script in PDF at Adobe
 subtitle: Exploit Knowledge
 categories: Adobe
-tags: [example, markdown]
+tags: [Adobe, JavaScript, SpiderMonkey]
 ---
 
 
