@@ -2,7 +2,7 @@
 layout: post
 title: Encoding [UTF-16BE; ANSI]
 subtitle: Exploit Knowledge
-excerpt_image: https://github.com/jeffreytse/jekyll-theme-yat/assets/9413601/2ed22d49-90b1-4f7e-8e8f-b77b21dee505
+excerpt_image: 
 categories: Adobe
 tags: CVE-2021-39863 UTF-16BE ANSI
 top: 2
