@@ -129,10 +129,9 @@ console.log(dv.getInt16(16, true))
 
 ---
 
-[2. DataView Object](#2-dataview-object)에서도 언급했듯 DataView Object가 존재하지 않는 property를 참조하면 DataView Object는 getProperty 함수를 호출해 해당 Property 검색한다.
+[2. DataView Object]에서도 언급했듯 DataView Object가 존재하지 않는 property를 참조하면 DataView Object는 getProperty 함수를 호출해 해당 Property 검색한다.
 
 ![image](https://github.com/user-attachments/assets/24ca4733-a21b-4556-8070-7c96f9707bce)
-
 [그림 6] getProperty 함수의 주소를 찾는 과정을 나타낸 참조도
 
 # REFERENCE
