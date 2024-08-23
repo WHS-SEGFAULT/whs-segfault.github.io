@@ -4,8 +4,7 @@ title: Encoding [UTF-16BE; ANSI]
 subtitle: Exploit Knowledge
 excerpt_image: 
 categories: Adobe
-tags: CVE-2021-39863 UTF-16BE ANSI
-top: 2
+tags: [CVE-2021-39863, UTF-16BE, ANSI]
 ---
 
 ## 1. Unicode
