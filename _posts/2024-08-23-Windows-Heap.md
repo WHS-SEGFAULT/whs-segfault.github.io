@@ -61,6 +61,6 @@ tags: [CVE-2021-39863, Windows, LFH, UserBlock]
     [그림 1] UserBlock 구조체의 구조. UserBlock Header는 일부만 나타냄
 
 ## REFERENCE
-[1] https://www.slideshare.net/slideshow/windows-10-nt-heap-exploitation-english-version/154467191
-[2] https://null2root.github.io/blog/2020/02/07/LazyFragmentationHeap-WCTF2019-writeup.html
-[3] https://illmatics.com/Understanding_the_LFH.pdf
+1. [Windows 10 Nt Heap Exploitation](https://www.slideshare.net/slideshow/windows-10-nt-heap-exploitation-english-version/154467191)
+2. [NT heap in CTF](https://null2root.github.io/blog/2020/02/07/LazyFragmentationHeap-WCTF2019-writeup.html)
+3. [Windows 7 NT Heap Internal](https://illmatics.com/Understanding_the_LFH.pdf)
