@@ -137,4 +137,4 @@ console.log(dv.getInt16(16, true))
 ## REFERENCE
 1. [DataView Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/DataView/DataView)
 2. [SpiderMonkey Internal](https://github.com/ricardoquesada/Spidermonkey/tree/master/js/src/vm)
-3. [JS Object](https://www.sidechannel.blog/en/attacking-js-engines/)
+3. [JSObject](https://www.sidechannel.blog/en/attacking-js-engines/)
