@@ -134,8 +134,10 @@ console.log(dv.getInt16(16, true))
 ![image](https://github.com/user-attachments/assets/24ca4733-a21b-4556-8070-7c96f9707bce)
 [그림 6] getProperty 함수의 주소를 찾는 과정을 나타낸 참조도
 
-# REFERENCE
+## REFERENCE
 1. [DataView Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/DataView/DataView)
+   
 2. [SpiderMonkey Internal](https://github.com/ricardoquesada/Spidermonkey/tree/master/js/src/vm)
+  
 3. [JS Object](https://www.sidechannel.blog/en/attacking-js-engines/)
 ---
