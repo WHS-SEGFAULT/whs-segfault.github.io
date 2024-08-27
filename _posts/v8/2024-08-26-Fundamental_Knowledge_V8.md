@@ -73,9 +73,11 @@ Ignition에서 수집한 프로파일링 정보를 통해 어느 수준의 최�
 
 ## Young space
 
-이 영역은 새로 생성된 객체들이 위치하는 영역이다. Scavenging이라는 방식을 통해 메모리를 관리하게 되는데, 이 Scavenging은 Minor GC라고도 불린다.
+이 영역은 새로 생성된 객체들이 위치하는 영역입니다. Scavenging이라는 방식을 통해 메모리를 관리하게 되는데, 이 Scavenging은 Minor GC라고도 합니다.
 
-Young space를 반으로 나누어서 이 영역 (semi-space) 을 교대로 사용하게 된다.
+그리고 Young space를 반으로 나누어서 이 영역 (semi-space) 을 교대로 사용하게 됩니다.
+
+이후 메모리에 할당되는 모습은 다음과 같습니다 :
 
 - 새로 생성된 객체는 하나의 semi-space에 할당된다.
 - 이 semi-space가 가득 차면 scavenger가 실행된다.
@@ -86,9 +88,11 @@ Young space를 반으로 나누어서 이 영역 (semi-space) 을 교대로 사�
 
 ## Old space
 
-Old space는 포인터 영역과 데이터 영역으로 나뉜다. 포인터 영역에는 다른 객체로의 포인터를 가진 객체들을 저장한다. 데이터 영역에는 오직 데이터만 저장한다. ( Strings, boxed numbers and arrays of unboxed doubles )
+Old space는 포인터 영역과 데이터 영역으로 나누어져 있습니다. 포인터 영역에는 다른 객체로의 포인터를 가진 객체들을 저장하고, 데이터 영역에는 오직 데이터만 저장합니다. ( Strings, boxed numbers and arrays of unboxed doubles )
 
-그리고 이 영역은 Young space에서 살아남아 장기간 유지되는 객체들이 존재하는 영역이다. 이 곳은 Mark-Sweep와 Mark-Compact 방식으로 관리된다. 이것은 Major GC라고도 불린다.
+그리고 이 영역은 Young space에서 살아남아 장기간 유지되는 객체들이 존재하는 영역입니다. 이 곳은 Mark-Sweep와 Mark-Compact 방식으로 관리되며, Major GC라고도 불립니다.
+
+Major GC의 특징은 다음과 같습니다 :
 
 - Mark-Sweep 방식은 사용되는 객체를 마크하고, 마크되지 않은 (즉, 더 이상 사용되지 않는) 객체들을 정리한다. 이때 메모리 단편화가 발생할 수 있다.
 - Mark-Compact 방식은 위에서 단편화가 생기는 것을 보완하기 위해 고안 되었으며, 살아남은 객체들을 메모리의 앞으로 이동시킨다.
