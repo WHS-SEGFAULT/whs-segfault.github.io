@@ -15,7 +15,7 @@ tags: [V8, Garbage Collection, Ubercage]
 이 Chrome 브라우저에서 사용하는 엔진이 지금 소개 중인 V8 엔진 입니다.
 
 <center> <img src="https://github.com/user-attachments/assets/0a823c86-6e55-41b4-a956-28a7ab7cd5b5" /> </center>
-<center> \[출처 : [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar)\] </center>
+<center> 출처 : [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar) </center>
 
 ## V8 엔진 구성 요소
 
@@ -26,10 +26,10 @@ V8의 구성 요소는 다음과 같습니다 :
 Parser, Ignition, Sparkplug, Maglev, TurboFan
 
 <center> <img src="https://github.com/user-attachments/assets/88795d10-86c5-45f2-9bc8-0ad99580b759" /> </center>
-<center> \[출처: [V8_pipeline](https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775)\] </center>
+<center> 출처: [V8_pipeline](https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775) </center>
 
 <center> <img src="https://github.com/user-attachments/assets/6aaf0bad-08c3-4520-966f-7f8f8f6ed823" /> </center>
-<center> \[출처 : [Pipeline with Maglev](https://docs.google.com/document/d/13CwgSL4yawxuYg3iNlM-4ZPCB8RgJya6b8H_E2F-Aek/edit#heading=h.dmhxljs5hbh)\] </center>
+<center> 출처 : [Pipeline with Maglev](https://docs.google.com/document/d/13CwgSL4yawxuYg3iNlM-4ZPCB8RgJya6b8H_E2F-Aek/edit#heading=h.dmhxljs5hbh) </center>
 
 각각의 구성 요소를 간단하게 설명하겠습니다.
 
