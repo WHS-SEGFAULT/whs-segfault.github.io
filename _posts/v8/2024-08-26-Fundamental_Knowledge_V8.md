@@ -50,12 +50,14 @@ Parser, Ignition, Sparkplug, Maglev, TurboFan
 
 <center> <img src="https://github.com/user-attachments/assets/d4214fee-b9f1-4543-a9b5-bec505bf1d1d" /> </center>
 
+<br>
 - Ignition : V8의 인터프리터로, 파싱된 AST 구조를 bytecode로 변환한다. 코드를 실행할 때 머신 코드로 컴파일하지 않고, 바로 bytecode로 컴파일 및 생성, 그리고 실행하기 때문에, 굉장히 빠르다는 장점이 있다. 그리고 코드를 실행하는 것 뿐만 아닌, 이후 최적화에 사용할 프로파일링 정보를 수집하는 역할을 합니다.
 
 이 사진은 bytecode의 일부분의 모습이다.
 
 <center> <img src="https://github.com/user-attachments/assets/e5b646c6-259a-40cd-bcc5-0e83f93f5841" /> </center>
 
+<br>
 Ignition에서 수집한 프로파일링 정보를 통해 어느 수준의 최적화를 할지, 이로 성능 속도와 실행 속도를 향상 시키기 위해 JIT 컴파일러를 사용하는데, 여기에는 세가지 종류의 컴파일러가 있습니다.
 
 - Sparkplug : 매우 빠르고 간단한 최적화를 수행하는 JIT 컴파일러이다. 최적화를 하지 않으며, 단순히 bytecode를 native code로 빠르게 변환한다.
@@ -76,6 +78,7 @@ Ignition에서 수집한 프로파일링 정보를 통해 어느 수준의 최�
 
 <center> <img src="https://github.com/user-attachments/assets/0d579d8a-59ff-4a3c-a161-1508caa6db58" /> </center>
 
+<br>
 기본적으로 V8의 heap은 다음과 같이 영역이 나뉘게 되는데, 우리가 메모리에 할당하는 영역은 Young space와 Old space가 있습니다. 이 두 영역은 서로 다른 방법으로 메모리를 관리하게 됩니다. 
 
 ### Young space
