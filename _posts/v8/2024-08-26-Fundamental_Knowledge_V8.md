@@ -15,7 +15,7 @@ tags: [V8, Garbage Collection, Ubercage]
 이 Chrome 브라우저에서 사용하는 엔진이 지금 소개 중인 V8 엔진 입니다.
 
 <center> <img src="https://github.com/user-attachments/assets/0a823c86-6e55-41b4-a956-28a7ab7cd5b5" /> </center>
-<center> 출처 : [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar) </center>
+<center> [출처 : [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar/)] </center>
 
 ## V8 엔진 구성 요소
 
