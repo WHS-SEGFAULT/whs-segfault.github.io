@@ -117,9 +117,9 @@ Major GC의 특징은 다음과 같습니다 :
 
 ## Preferences
 
-[Data and Object in V8](https://www.dashlane.com/blog/how-is-data-stored-in-v8-js-engine-memory)
-[Abstract of Maglev](https://research.google/pubs/maglev-a-fast-and-reliable-software-network-load-balancer/)
-[Explanation about Garbage collection in korean](https://medium.com/hcleedev/web-javascript%EC%9D%98-garbage-collection-v8-%EC%97%94%EC%A7%84-9409c5be917c)
+[Data and Object in V8](https://www.dashlane.com/blog/how-is-data-stored-in-v8-js-engine-memory) <br>
+[Abstract of Maglev](https://research.google/pubs/maglev-a-fast-and-reliable-software-network-load-balancer/) <br>
+[Explanation about Garbage collection in korean](https://medium.com/hcleedev/web-javascript%EC%9D%98-garbage-collection-v8-%EC%97%94%EC%A7%84-9409c5be917c) <br>
 
 
 
