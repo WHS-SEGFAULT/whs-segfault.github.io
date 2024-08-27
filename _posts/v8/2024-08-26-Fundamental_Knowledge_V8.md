@@ -6,9 +6,7 @@ categories: V8
 tags: [V8, Garbage Collection, Ubercage]
 ---
 
-# [v8] 배경 지식 - V8, Pipeline, Garbage collection, Ubercage
-
-## V8이란
+# V8이란
 
 우선 v8이 무엇인지에 대해 설명해보겠습니다.
 
@@ -17,6 +15,7 @@ tags: [V8, Garbage Collection, Ubercage]
 이 Chrome 브라우저에서 사용하는 엔진이 지금 소개 중인 V8 엔진 입니다.
 
 <center> <img src="https://github.com/user-attachments/assets/0a823c86-6e55-41b4-a956-28a7ab7cd5b5" /> </center>
+<center> [출처 : [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar)] </center>
 
 ## V8 엔진 구성 요소
 
@@ -27,8 +26,10 @@ V8의 구성 요소는 다음과 같습니다 :
 Parser, Ignition, Sparkplug, Maglev, TurboFan
 
 <center> <img src="https://github.com/user-attachments/assets/88795d10-86c5-45f2-9bc8-0ad99580b759" /> </center>
+<center> [출처: [V8_pipeline](https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775)] </center>
 
 <center> <img src="https://github.com/user-attachments/assets/6aaf0bad-08c3-4520-966f-7f8f8f6ed823" /> </center>
+<center> [출처 : [Pipeline with Maglev](https://docs.google.com/document/d/13CwgSL4yawxuYg3iNlM-4ZPCB8RgJya6b8H_E2F-Aek/edit#heading=h.dmhxljs5hbh)] </center>
 
 각각의 구성 요소를 간단하게 설명하겠습니다.
 
@@ -58,7 +59,7 @@ Ignition에서 수집한 프로파일링 정보를 통해 어느 수준의 최�
 
 어느 컴파일러가 최적화를 진행할지는 Ignition이 수집한 프로파일링 정보를 통해 결정이 되는데, 일반적으로 호출 횟수에 따라 정해지기 때문에, 횟수가 증가하면서 **“hot”** 코드로 인식되면 최적화를 진행한다 라고 간단하게 알고 있으면 좋습니다.
 
-## Garbage Collection of V8
+# Garbage Collection of V8
 
 제목에 의도적으로 V8의 Garbage Collection이라고 적었는데, 그 이유는 V8의 Garbage Collection과 Java의 Garbage Collection이 다르기 때문입니다.
 
@@ -70,7 +71,7 @@ Ignition에서 수집한 프로파일링 정보를 통해 어느 수준의 최�
 
 기본적으로 V8의 heap은 다음과 같이 영역이 나뉘게 되는데, 우리가 메모리에 할당하는 영역은 Young space와 Old space가 있습니다. 이 두 영역은 서로 다른 방법으로 메모리를 관리하게 됩니다. 
 
-### Young space
+## Young space
 
 이 영역은 새로 생성된 객체들이 위치하는 영역이다. Scavenging이라는 방식을 통해 메모리를 관리하게 되는데, 이 Scavenging은 Minor GC라고도 불린다.
 
@@ -83,7 +84,7 @@ Young space를 반으로 나누어서 이 영역 (semi-space) 을 교대로 사�
 
 참고! Scavenging을 하면서 다른 semi-space로 옮기면서 정리하게 되어 이미 이것을 하면서 compaction과 같은 효과를 갖게 된다. 따라서 별도의 compaction 단계는 없지만, Young space도 객체들을 메모리의 앞으로 이동시키게 된다.
 
-### Old space
+## Old space
 
 Old space는 포인터 영역과 데이터 영역으로 나뉜다. 포인터 영역에는 다른 객체로의 포인터를 가진 객체들을 저장한다. 데이터 영역에는 오직 데이터만 저장한다. ( Strings, boxed numbers and arrays of unboxed doubles )
 
@@ -96,13 +97,17 @@ Old space는 포인터 영역과 데이터 영역으로 나뉜다. 포인터 영
 
 [https://deepu.tech/memory-management-in-v8/](https://deepu.tech/memory-management-in-v8/)
 
-## V8 Sandbox ( a.k.a. Ubercage )
+# V8 Sandbox ( a.k.a. Ubercage )
 
 
 
-## Preferences
+# Preferences
 
+[Data and Object in V8](https://www.dashlane.com/blog/how-is-data-stored-in-v8-js-engine-memory)
 
+[Abstract of Maglev](https://research.google/pubs/maglev-a-fast-and-reliable-software-network-load-balancer/)
+
+[Explanation about Garbage collection in korean](https://medium.com/hcleedev/web-javascript%EC%9D%98-garbage-collection-v8-%EC%97%94%EC%A7%84-9409c5be917c)
 
 
 
