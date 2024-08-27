@@ -6,6 +6,7 @@ categories: V8
 tags: [V8, Garbage Collection, Ubercage]
 ---
 
+<br>
 # V8이란
 
 우선 v8이 무엇인지에 대해 설명해보겠습니다.
@@ -17,6 +18,12 @@ tags: [V8, Garbage Collection, Ubercage]
 <center> <img src="https://github.com/user-attachments/assets/0a823c86-6e55-41b4-a956-28a7ab7cd5b5" /> </center>
 <center> [출처 : [Browser Market Share Worldwide](https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar/)] </center>
 
+<p align="center"> 
+    [출처 : <a href="https://gs.statcounter.com/browser-market-share#monthly-202312-202312-bar/">Browser Market Share Worldwide</a>]
+</p>
+
+
+<br>
 ## V8 엔진 구성 요소
 
 이 V8 엔진 속에는 다양한 구성 요소로 이루어져 있습니다. 이해하기 편하게 두 개의 사진을 아래에 첨부하였습니다.
