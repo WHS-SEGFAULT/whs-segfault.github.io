@@ -113,7 +113,9 @@ Major GC의 특징은 다음과 같습니다 :
 
 ## V8 Sandbox ( a.k.a. Ubercage )
 
+V8에는 heap에서 취약점이 트리거 되어도 exploit을 성공하는 것을 막는 보호기법이 있습니다. 바로 이 Sandbox라는 것은, exploit에 사용될 수 있는 객체들을 모은 별도의 분리된 공간입니다. 이를 통해 heap의 객체에 직접 주소를 저장하는게 아닌, table의 index를 저장하는 방식으로 발전해왔습니다.
 
+그리고 이 Sandbox를 우회하기위해 나중에 WebAssembly라는 것을 사용하게 될 것입니다.
 
 ## Preferences
 
