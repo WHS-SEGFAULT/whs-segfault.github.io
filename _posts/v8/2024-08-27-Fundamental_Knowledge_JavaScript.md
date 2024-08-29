@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fundamental Knowledge of JavaScript ( V8, Pipeline, Garbage collection, Ubercage )
+title: Fundamental Knowledge of JavaScript ( JS object structure, Allocation folding, TypedArray )
 subtitle: Exploit Knowledge
 categories: JavaScript
 tags: [JavaScript, JS Object, Allocation Folding]
@@ -24,7 +24,7 @@ Javascript Object는 key-value로 이루어진 데이터 구조입니다. V8 엔
 
 객체가 생성될 때 map이 생기게 되는데 새로운 Properties가 생길 때 마다 다른 map이 하나씩 생기게 됩니다.
 
-또한 map은 이전의 map과 다음 map을 동시에 가리키고 있음으로 둘 다 찾아갈 수 있습니다.
+또한 map은 이전의 map과 다음 map을 동시에 가리키고 있으므로 둘 다 찾아갈 수 있습니다.
 
 <center> <img src="https://github.com/user-attachments/assets/82974c1a-e29d-473a-a78c-83e18962f9c2" /> </center>
 
@@ -45,9 +45,9 @@ let person = {
 
 이런 식으로 person이 정의가 되어 있다고 하면 
 
-name은 속성 john은  값 
+name -> 속성 john -> 값 
 
-age 는 속성 30은 값 
+age -> 속성 30 -> 값 
 
 isEmployed는 속성 true는 값
 
@@ -77,11 +77,11 @@ Elements는 이런 배열의 요소들을 저장하거나 관리하는 역할을
 
 ## Allocation folding
 
-Allocation Folding이란 메모리에 여러 번 할당할 것을 한번에 할당하여 불필요한 할당횟수를 줄이는 메모리 할당 기법이다. 
+Allocation Folding이란 메모리에 여러 번 할당할 것을 한번에 할당하여 불필요한 할당횟수를 줄이는 메모리 할당 기법입니다. 
 
 <center> <img src="https://github.com/user-attachments/assets/bb16d73f-8ffd-4b9d-a259-f4f3d9518615" /> </center>
 
-예를 들어 설명하자면 그림에 나와있는 Class B와 Array a를 할당할땐 각각 1번씩 메모리에 할당하게 되어 총 2번 할당하게 된다. 하지만 여기서 allocation folding 기법을 사용하게 되면 class B와 Array a의 크기를 더한 값 (size(x+y) 만큼의 공간을 할당하여 Array a와 Class B가 나누어 쓰게 된다. 
+예를 들어 설명하자면 그림에 나와있는 Class B와 Array a를 할당할땐 각각 1번씩 메모리에 할당하게 되어 총 2번 할당하게 됩니다. 하지만 여기서 allocation folding 기법을 사용하게 되면 class B와 Array a의 크기를 더한 값 (size(x+y) 만큼의 공간을 할당하여 Array a와 Class B가 나누어 쓰게 됩니다. 
 
  
 
@@ -99,7 +99,7 @@ TypedArray를 사용하는 이유는 다 동일한 타입을 가지고 있기 �
 
 또한 Packed Array와 Holey Array의 개념이 있는데 Packed Array부터 설명을 하자면
 
-모든 요소가 연속적으로 정의된 배열입니다. 배열 내에 모든 인덱스가 가득 차 있다는 말입니다.
+모든 요소가 연속적으로 정의된 배열입니다. 배열 내에 모든 인덱스가 가득 차 있다는 뜻입니다.
 
 이 형태의 배열은 메모리에서 연속적으로 저장되므로 접근 속도가 빠릅니다.
 
@@ -117,19 +117,19 @@ array[4] = "five"
 array[6] = 6
 ```
 
-첫줄은 PACKED_SMI_ELEMENTS이다. 여기서 Smi란 31(x32)비트 또는 63(x64)비트 크기의 작은 정수를 나타내는 v8 엔진 내부의 데이터 형식이다. 모든 배열이 다 차 있기 때문에 PACKED입니다.
+첫줄은 PACKED_SMI_ELEMENTS니다. 여기서 Smi란 31(x32)비트 또는 63(x64)비트 크기의 작은 정수를 나타내는 v8 엔진 내부의 데이터 형식입니다. 모든 배열이 다 차 있기 때문에 PACKED입니다.
 
-두번째줄은 마찬가지로 PACKED이지만 PACKED_DOUBE_ELEMENT이다. 원랜 SMI만 존재했지만 Float값이 들어가 Smi와  Float가 한 배열 안에 존재하기 때문입니다.
+두번째줄은 마찬가지로 PACKED이지만 PACKED_DOUBE_ELEMENT입니다. 원랜 SMI만 존재했지만 Float값이 들어가 Smi와  Float가 한 배열 안에 존재하기 때문입니다.
 
-세번째줄은  여전히 PACKED_DOUBLE_ELEMENTS입다.  왜냐하면 마지막 부분이 다시 SMI 값이 된다고 PACKED_SMI_ELEMENT가 되는  것이 아니라 한 번 변한 배열은 다시 돌아오지 않기 때문이다. 그렇기 때문애 
+세번째줄은  여전히 PACKED_DOUBLE_ELEMENTS입니다.  왜냐하면 마지막 부분이 다시 SMI 값이 된다고 PACKED_SMI_ELEMENT가 되는  것이 아니라 한 번 변한 배열은 다시 돌아오지 않기 때문입니다. 그렇기 때문 
 
-PACKED_DOUBLE_ELEMENTS이다.
+PACKED_DOUBLE_ELEMENTS입니다.
 
-네번째줄은 PACKED_ELEMENTS이다. 인덱스는 여전히 가득 차 있지만 종류가 3개이상이 되어 DOUBLE이 사라지게 되었다.
+네번째줄은 PACKED_ELEMENTS입니다. 인덱스는 여전히 가득 차 있지만 종류가 3개이상이 되어 DOUBLE이 사라지게 되었습니니다.
 
-다섯번째줄은 HOLEY_ELEMENTS이다. 왜냐하면 갑자기 인덱스 6을 넣었는데 그 전의 값인 array[5]값이 없기 때문에 빈 공간이 생겨서 Holey가 생겼기 때문이다.
+다섯번째줄은 HOLEY_ELEMENTS입니다. 왜냐하면 갑자기 인덱스 6을 넣었는데 그 전의 값인 array[5]값이 없기 때문에 빈 공간이 생겨서 Holey가 생겼기 때문입니다.
 
-나중에 Exploit분석에 나올 내용이니 잘 봐두면 좋다. 
+나중에 Exploit 분석에 나올 내용이니 잘 봐두면 좋습니다. 
 
 Reference 
 
