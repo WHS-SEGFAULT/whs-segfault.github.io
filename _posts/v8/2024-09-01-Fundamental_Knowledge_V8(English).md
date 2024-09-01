@@ -23,7 +23,7 @@ The engine used by the Chrome browser, which I'm currently introducing, is the V
 It seems Chrome might need to make more of an effort so that searches for 'V8 engine' immediately bring up the Chrome V8 engine instead.
 
 <br>
-### V8 engine components (Pipeline)
+###V8 engine components (Pipeline)
 
 The V8 engine is composed of various components. To make it easier to understand, I have attached two images below.
 
