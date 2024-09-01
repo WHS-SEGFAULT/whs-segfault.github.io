@@ -9,7 +9,7 @@ tags: [JavaScript, JS Object, Allocation Folding]
 # [JavaScript] Background Knowledge - Java Object Structure, Allocation Folding
 
 
-# **Fundamental Knowledge of JavaScript** - JS object structure, Allocation folding,TypedArray
+
 
 ## JS object structure
 
