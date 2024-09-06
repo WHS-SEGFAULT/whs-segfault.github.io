@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[English\] Windows Heap
+title: [English] Windows Heap
 subtitle: Exploit Knowledge
 categories: Adobe
 tags: [CVE-2021-39863, Windows, LFH, UserBlock]
