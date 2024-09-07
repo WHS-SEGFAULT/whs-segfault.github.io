@@ -3,7 +3,7 @@ layout: post
 title: "[English] JS Object - SpiderMonkey"
 subtitle: Exploit Knowledge
 categories: Adobe
-tags: [CVE-2021-39863, ArrayBuffer, DataView]
+tags: [CVE-2021-39863, ArrayBuffer, DataView, English]
 ---
 
 - We exploit CVE-2021-39863 by using Stack Pivoting after accessing the arbitrary address by JS Object.
