@@ -3,7 +3,7 @@ layout: post
 title: "[English] Windows Heap"
 subtitle: Exploit Knowledge
 categories: Adobe
-tags: [CVE-2021-39863, Windows, LFH, UserBlock]
+tags: [CVE-2021-39863, Windows, LFH, UserBlock, English]
 ---
 
 - There are two types of Windows heap allocation mechanisms:
