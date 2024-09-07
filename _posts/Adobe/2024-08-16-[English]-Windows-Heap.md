@@ -7,8 +7,9 @@ tags: [CVE-2021-39863, Windows, LFH, UserBlock]
 ---
 
 - There are two types of Windows heap allocation mechanisms:
-    1. **NT Heap** : This is the traditional Windows heap allocation mechanism.
-    2. **Segment Heap** : Introduced in Windows 10, this is a newer heap allocation mechanism. However, i[English] Windows Heap ac6965382984472ea71940afa5bc3f8dt has not been widely adopted, because many programs are optimized for the NT heap.
+    1. **NT Heap** : This is the traditional Windows heap allocation mechanism. 
+    2. **Segment Heap** : Introduced in Windows 10, this is a newer heap allocation mechanism.
+    However, it has not been widely adopted, because many programs are optimized for the NT heap.
 
 ## 1. NT Heap and LFH
 
