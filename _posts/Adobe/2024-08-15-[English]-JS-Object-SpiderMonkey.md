@@ -2,6 +2,7 @@
 layout: post
 title: "[English] JS Object - SpiderMonkey"
 subtitle: Exploit Knowledge
+excerpt_image: NO_EXCERPT_IMAGE
 categories: Adobe
 tags: [CVE-2021-39863, ArrayBuffer, DataView, English]
 ---
