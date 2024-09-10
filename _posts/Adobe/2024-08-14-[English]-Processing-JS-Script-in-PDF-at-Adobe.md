@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[English] Processing JS Script in PDF at Adobe"
+title: "[Eng] Processing JS Script in PDF at Adobe"
 subtitle: Exploit Knowledge
 excerpt_image: https://github.com/user-attachments/assets/07694f1f-b53d-4752-9f64-815c7c0e9bdc
 categories: Adobe

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fundamental Knowledge of V8 engine ( V8, Pipeline, Garbage collection, Ubercage )-English
+title: "[Eng] Fundamental Knowledge of V8 engine (V8, Pipeline, Garbage collection, Ubercage)"
 subtitle: Exploit Knowledge
 excerpt_image: NO_EXCERPT_IMAGE
 categories: V8

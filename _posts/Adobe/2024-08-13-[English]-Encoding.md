@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[English] Encoding [UTF-16BE; ANSI]"
+title: "[Eng] Encoding [UTF-16BE; ANSI]"
 subtitle: Exploit Knowledge
 excerpt_image: NO_EXCERPT_IMAGE
 categories: Adobe

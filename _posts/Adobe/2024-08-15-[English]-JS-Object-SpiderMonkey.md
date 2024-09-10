@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[English] JS Object - SpiderMonkey"
+title: "[Eng] JS Object - SpiderMonkey"
 subtitle: Exploit Knowledge
 excerpt_image: NO_EXCERPT_IMAGE
 categories: Adobe

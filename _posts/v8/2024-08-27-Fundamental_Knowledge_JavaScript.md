@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Fundamental Knowledge of JavaScript ( JS object structure, Allocation folding, TypedArray )
+title: Fundamental Knowledge of JavaScript (JS object structure, Allocation folding, TypedArray)
 subtitle: Exploit Knowledge
 excerpt_image: NO_EXCERPT_IMAGE
-categories: JavaScript
-tags: [JavaScript, JS Object, Allocation Folding]
+categories: V8
+tags: [V8, JS Object, Allocation Folding]
 ---
 
 # [JavaScript] 배경 지식 - 자바 객체 구조, Allocation folding
